@@ -10,8 +10,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>login</h2>
-                <form action="{{route('logear')}}" method="POST">
+                <h2>Registro</h2>
+                <form action="{{route("nuevo")}}" method="POST">
                 @method('POST')
                 @csrf
                 <label for="">Usuario</label>
@@ -19,10 +19,8 @@
                 <label for="">Password</label>
                 <input type="password" class="form-control" name="password">
                 <br>
-                <button class="btn btn-primary">Entrar</button>
+                <button class="btn btn-primary">Guardar</button>
                 </form>
-                <br>
-                <a class="btn btn-secondary" href="/createUsuario">Registrar</a>
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 class clientes extends Controller
 {
         public function __constructor(){
-            $this->Middleware(['auth'])->only(['index']);
+            $this->middleware(['auth'])->only(['auth-login']);
         }
     /**
      * Display a listing of the resource.
@@ -25,7 +25,7 @@ class clientes extends Controller
     }
     public function login(){
         if(Auth::check()){
-            return redirect()->route('index');
+            return redirect()->route('auth-login');
         }
     }
     /**

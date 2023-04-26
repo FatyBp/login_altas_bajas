@@ -15,6 +15,7 @@
             <a href="/create" class="btn btn-primary mt-4">
                 Nuevo
             </a>
+            <a class="btn btn-success mt-4" href="{{route('logout')}}">Salir del sistema</a>
             <br>
             <br>
             <div class="card">
@@ -109,12 +110,3 @@
         });
     </script>
 @endsection
- 
-  
-  
-  
-  
-  
-  
-    
-<a href="{{route('logout')}}">Salir del sistema</a>

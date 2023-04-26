@@ -1,0 +1,9 @@
+ul {
+    text-align: center;
+  }
+  
+  ul li {
+    text-align: left;
+    display: inline-block;
+  }
+  
